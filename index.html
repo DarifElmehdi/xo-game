@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style/style.css" />
+        <link
+            rel="shortcut icon"
+            href="assets/favicon.png"
+            type="image/x-icon"
+        />
+        <title>XO-GAME</title>
+    </head>
+    <body>
+        <h1 class="game-title">XO-XO</h1>
+        <div class="game-container" id="game">
+            <button class="case"></button>
+            <button class="case"></button>
+            <button class="case"></button>
+            <button class="case"></button>
+            <button class="case"></button>
+            <button class="case"></button>
+            <button class="case"></button>
+            <button class="case"></button>
+            <button class="case"></button>
+        </div>
+        <dialog id="popup">
+            <h1 class="congrats">
+                Congrats player <span id="winner"></span> wins !
+            </h1>
+            <button id="restart">Play Again!</button>
+        </dialog>
+    </body>
+    <script src="script.js"></script>
+</html>

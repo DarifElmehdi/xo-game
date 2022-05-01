@@ -1,0 +1,64 @@
+//  colors
+$clr-primary: #a33e00;
+$clr-secondary: #00ebff;
+$clr-grey: #e6f4f1;
+$clr-darkblue: #004154;
+// for demo only
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: $clr-grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+    color: #004154;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.game-container {
+    aspect-ratio: 1/1;
+    width: min(90%, 30rem);
+    background-color: $clr-primary;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    .case {
+        background-color: $clr-darkblue;
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #e6f4f1;
+        font-size: 5rem;
+    }
+}
+dialog {
+    margin-top: 15rem;
+    border: none !important;
+    border-radius: calc(5px * var(--ratio));
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 1rem 2rem;
+    max-width: 400px;
+    h1 {
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    button {
+        all: unset;
+        cursor: pointer;
+        align-self: flex-end;
+        padding: 0.8rem 1rem;
+        background-color: $clr-primary;
+        color: white;
+        border-radius: 5rem;
+        align-self: auto;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
